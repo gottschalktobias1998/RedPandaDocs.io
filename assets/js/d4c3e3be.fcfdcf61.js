@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkred_panda_docs=self.webpackChunkred_panda_docs||[]).push([[1782],{5439:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/RedPandaDocs.io/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
