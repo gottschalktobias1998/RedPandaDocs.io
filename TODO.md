@@ -1,2 +1,0 @@
-- Change "src/home.svg" possible into another svg.
-- Change homepage svg's.
