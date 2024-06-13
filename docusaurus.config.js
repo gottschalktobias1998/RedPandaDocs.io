@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+const { themes: prismThemes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,15 +13,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://gottschalktobias1998.github.io/RedPandaDocs.io/',
+  url: 'https://gottschalktobias1998.github.io', // Your GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/RedPandaDocs.io',
+  baseUrl: '/RedPandaDocs.io/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gottschalktobias1998', // Usually your GitHub org/user name.
-  projectName: 'RedPandaDocs.io', // Usually your repo name.
+  organizationName: 'gottschalktobias1998', // Your GitHub org/user name.
+  projectName: 'RedPandaDocs.io', // Your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,21 +39,19 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/gottschalktobias1998/RedPandaDocs.io',
+          editUrl: 'https://github.com/gottschalktobias1998/RedPandaDocs.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/gottschalktobias1998/RedPandaDocs.io/tree/main',
+          editUrl: 'https://github.com/gottschalktobias1998/RedPandaDocs.io/edit/main/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -78,7 +75,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/gottschalktobias1998/RedPandaDocs.io',
             label: 'GitHub',
