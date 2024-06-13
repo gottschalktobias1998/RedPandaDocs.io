@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Red Panda-Docs',
+  tagline: 'A documentation website for pandas',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -76,11 +76,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/gottschalktobias1998/RedPandaDocs.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -102,16 +102,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Webpage',
+                href: 'https://redpanda-design.de/',
               },
             ],
           },
@@ -123,13 +115,17 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub',
+                label: 'GitHub - RedPandaDocs',
+                href: 'https://github.com/gottschalktobias1998/RedPandaDocs.io',
+              },
+              {
+                label: 'GitHub - Docusaurus',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sophia Michel & Benjamin Efe GbR – Red Panda Design. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
