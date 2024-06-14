@@ -41,3 +41,36 @@
   background-color: #a8343c;
 }
 
+/* Define Mona Sans font faces */
+
+@font-face {
+  font-family: 'Hubot Sans';
+  src: url('../../static/fonts/Mona-Sans.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mona Sans-Regular';
+  src: url('../../static/fonts/Mona-Sans.ttf') format('truetype');
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mona Sans-Bold';
+  src: url('../../static/fonts/Mona-Sans.ttf') format('truetype');
+  font-weight: 900;
+  font-style: bold;
+}
+
+/* Apply the Mona Sans font to the body and headings */
+body {
+  font-family: 'Mona Sans-Regular', sans-serif;
+  font-size: 1.2rem;
+  font-kerning: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mona Sans-Bold', sans-serif;
+}
