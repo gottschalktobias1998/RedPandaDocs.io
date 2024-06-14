@@ -2,46 +2,57 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Quick-Start-Guide
 
-Let's discover **Docusaurus in less than 5 minutes**.
+In this guide you will learn how to create new pages.
+This should take no more then **5 minutes!**.
 
-## Getting Started
+## Creating a new site
 
 Get started by **creating a new site**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Node.js](https://nodejs.org/en/download) version 18.0 or above:
+    - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+- [git](https://www.git-scm.com/download) version 
+2.45.2 or above.
 
-Generate a new Docusaurus site using the **classic template**.
+### Getting started with this project
 
-The classic template will automatically be added to your project after you run the command:
+- Clone this [repository](https://github.com/gottschalktobias1998/RedPandaDocs.io) onto your workstation.
 
 ```bash
-npm init docusaurus@latest my-website classic
+git clone https://github.com/gottschalktobias1998/RedPandaDocs.io
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- Navigate into the directory.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+```bash
+cd RedPandaDocs.io
+```
 
-## Start your site
+- After navigating into the folder, install all dependencies using:
+
+```bash
+npm install
+```
+
+### Start your site
 
 Run the development server:
 
 ```bash
-cd my-website
 npm run start
+or
+npm start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+The `run` command will start one of the defined scripts located in the `package.json`
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+`start` is a special word, as it does not require to write `run` before it.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+It will build this website locally and serves it thought a development server, ready for you to view at `http://localhost:3000`.
+
+While the server is running, any changes will **reload automatically** in the browser!
